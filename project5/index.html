@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <!-- forms are used to take the input form the user input is a self closing inline elemtn and it contains following
+    attributes like type : define the type of the input name: define the name carries the value to the destination id:
+    used to identifiy the elemnt uniquely placeholder: deummy text untile any value enter in the input value:prefilled
+    value for input --form also take two input such as attribute we have action :path for destinaation file --method:how
+    we send the data .there are two ways i.get:data is visible in url ii.post:data is not visible in url it send
+    directly
+    https://github.com/prasad-bigdp/2pmplacement -->
+    <form action="/data" method="post">
+        <div>
+            <label for="aadharnumber">Aadharcard Number:</label>
+            <input type="number" id="aadharnumber" name="aadharnumber">
+        </div>
+        <div>
+            <label for="first_name">First Name:
+                <input type="text" name="first_name" id="first_name">
+            </label>
+
+        </div>
+        <div>
+            <label for="middle_name">Middle Name:
+                <input type="text" name="middle_name" id="middle_name">
+            </label>
+
+        </div>
+        <div>
+            <label for="last_name">Last Name:
+                <input type="text" name="last_name" id="last_name">
+            </label>
+
+        </div>
+        <div>
+            <label for="age">Age:
+                <input type="number" id="age" name="age">
+            </label>
+        </div>
+        <div>
+            <p>select gender</p>
+            <div>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="transgender" name="gender" value="Transgender">
+                <label for="transgender">Transgender</label>
+
+            </div>
+        </div>
+        <div>
+            <label for="date">Date:
+                <input type="date" name="date" id="date">
+            </label>
+        </div>
+        <div>
+            <label for="phone_number">Phone number:
+                <input type="number" id="phone_number" name="phone_number">
+            </label>
+        </div>
+        <div>
+            <label for="email">Email:
+                <input type="email" id="email" name="email">
+            </label>
+        </div>
+        <div>
+            <textarea name="text_area" id="text_area">Address:</textarea>
+        </div>
+
+
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
